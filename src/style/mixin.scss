@@ -1,0 +1,20 @@
+
+@mixin getStepNums($num) {
+  @for $i from 1 through $num {
+    &:nth-child(#{$i}) .circle-container::after {
+      content: "#{$i}";
+    }
+  }
+}
+
+
+
+@mixin BtnStyle($background-color, $color) {
+  background-color: $background-color;
+  border: none;
+  border-radius: 0.5rem;
+  color: $color;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+}

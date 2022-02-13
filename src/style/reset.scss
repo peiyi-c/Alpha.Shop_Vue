@@ -1,0 +1,215 @@
+/* 載入字型 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap");
+
+/* reset css */ /* basic settings*/
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.btn,
+button,
+button:focus,
+input:focus,
+textarea:focus,
+select,
+select:focus,
+a:focus {
+  outline: 0px !important;
+}
+
+
+
+$white: #ffffff;
+$fashion-pink: #f67599;
+$light-gray: #f0f0f5;
+$sky-gray: #e5e5e5;
+$steel-gray: #afb1bd;
+$koala-gray: #999999;
+$dark-gray: #808080;
+$footer-gray: #f6f7f8;
+$black: #000000;
+$almost-black: #2a2a2a;
+$fashion-black: #333333;
+
+$sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: (
+    $spacer * 0.25
+  ),
+  2: (
+    $spacer * 0.5
+  ),
+  3: (
+    $spacer * 0.75
+  ),
+  4: $spacer,
+  5: (
+    $spacer * 1.25
+  ),
+  6: (
+    $spacer * 1.5
+  ),
+  7: (
+    $spacer * 1.75
+  ),
+  8: (
+    $spacer * 2
+  )
+);
+
+
+%input-style {
+  font-size: 16px;
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+  padding: 1em;
+  &:hover,
+  &:focus {
+    border: 1px solid $dark-gray;
+  }
+}
+
+button[disabled] {
+  display: none;
+}
+
+input {
+  padding: 1rem;
+}
+
+input:required {
+  box-shadow: none;
+}
+
+input:invalid {
+  box-shadow: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-blockt;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-start {
+  justify-content: flex-start;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.align-content-start {
+  align-content: flex-start;
+}
+.align-content-end {
+  align-content: flex-end;
+}
+.align-content-center {
+  align-content: center;
+}
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
