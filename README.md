@@ -1,4 +1,5 @@
 # alpha-shop
+A check-out cart with 3 steps using Vue.js
 
 ## Project setup
 ```
